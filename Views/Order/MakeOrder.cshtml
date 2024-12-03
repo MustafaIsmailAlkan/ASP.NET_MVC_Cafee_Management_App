@@ -1,0 +1,73 @@
+@model IEnumerable<ProductCategory>
+
+<h1>Menu</h1>
+
+<h5>to select an item just increase the amount and click on the order button below.</h5>
+
+
+<form asp-controller="Order" asp-action="MakeOrder" method="post">
+    <input type="hidden" name="id" value="@Context.GetRouteValue("id")" />
+    @foreach(var category in Model)
+    {
+        <div class="mb-4">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <h3 class="card-title px-3">@category.CategoryName</h3>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="card-title px-3">Name</h4>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="card-text px-3">Price</h4>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="card-text px-3">Avaliable?</h4>
+                </div>
+                <div class="col-md-2">
+                    <h4 class="card-text px-3">Amount</h4>
+                </div>
+            </div>
+            @foreach(var item in category.Products)
+            {
+                <div class="card mb-3 bg-light">
+                    <div class="row g-0 ">
+                        <div class="col-md-3">
+                            <img style="height:150px;" src="/Img/@item.ProductImage" class="img-fluid text-center" alt="No Image">
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card-body">
+                                <h4 class="card-title">@item.ProductName</h4>
+                                <p class="card-text">@item.ProductDescription</p>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card-body">
+                                <h4 class="card-text">@item.ProductPrice TL</h4>
+                                
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="card-body">
+                                @if(@item.IsActive)
+                                {
+                                    <h4 class="card-text">Yes</h4>
+                                }
+                                else
+                                {
+                                    <h4 class="card-text">No</h4>
+                                }
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-2">
+                            <div class="card-body text-center">
+                                <input name="ProductAmounts[@item.ProductId]" type="number" value="0" min="0" class="input-group text-center">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    <button type="submit" class="btn btn-primary mb-3">Order</button>
+</form>

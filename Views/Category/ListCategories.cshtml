@@ -1,0 +1,41 @@
+@model IEnumerable<ProductCategory>
+
+
+<h1 class="mb-3">Categories</h1>
+<a asp-controller="Category" asp-action="AddCategory" class="btn btn-primary mb-3">Add Category</a>
+<div class="row">
+    <div class="col-1" >
+
+    </div>
+
+    <div class="col-9">
+        <table class="table table-hover text-center table-striped">
+            
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Category Name</th>
+                    </tr>
+                </thead>
+                <tbody class="">
+                    @foreach(var category in Model)
+                    {
+                    <tr>
+                        <td>@category.CategoryName</td>
+                        <td style="width: 30%;">
+                            <a asp-controller="Category" asp-action="EditCategory" asp-route-id="@category.ProductCategoryId" class="btn btn-primary ">Edit</a>
+                            <form asp-action="DeleteCategory" asp-controller="Category" asp-route-id="@category.ProductCategoryId" method="post" class="d-inline">
+                                <button onclick="return confirm('Are you sure you want to remove this item?');" class="btn btn-danger">Delete</button>
+                            </form>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            
+        </table>
+    </div>
+
+    <div class="col-2">
+
+    </div>
+</div>
+

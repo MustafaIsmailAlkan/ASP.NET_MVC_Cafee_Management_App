@@ -1,0 +1,18 @@
+@model AddUserViewModel
+
+<form asp-action="AddUser" asp-controller="Users" method="post" class="mb-3">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="form-group mb-3">
+        <label asp-for="@Model.UserName">User Name</label>
+        <input asp-for="@Model.UserName" class="form-control"/>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="@Model.Password">Password</label>
+        <input asp-for="@Model.Password" class="form-control"></input>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="@Model.ConfirmPassword">Confirm Password</label>
+        <input asp-for="@Model.ConfirmPassword" class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-primary">Add User</button>
+</form>    

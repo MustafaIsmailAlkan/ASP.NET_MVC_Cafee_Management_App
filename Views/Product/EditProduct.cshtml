@@ -1,0 +1,34 @@
+@model Product
+
+<form asp-action="EditProduct" asp-controller="Product" method="post" class="mb-3" enctype="multipart/form-data">
+    <input type="hidden" asp-for="@Model.ProductId">
+    <div class="form-group mb-3">
+        <label asp-for="@Model.ProductName">Product Name</label>
+        <input type="text" asp-for="@Model.ProductName" class="form-control"/>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="@Model.ProductDescription">Product Description</label>
+        <textarea asp-for="@Model.ProductDescription" style="height: 150px;" class="form-control"></textarea>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="@Model.ProductPrice">Product Price</label>
+        <input type="number" step="0.01" asp-for="@Model.ProductPrice" class="form-control"/>
+    </div>
+    <div class="form-group mb-3">
+        <img src="~/img/@Model.ProductImage" style="width: 100px;"></img>
+        <small class="text-danger">@Model.ProductImage Kullanılıyor</small>
+        <input type="file" name="imageFile" id="imageFile" class="form-control mt-1"/>
+    </div>
+        <input type="text" asp-for="@Model.ProductImage" class="form-control"/>
+    <div class="form-group form-check mb-3">
+        <input type="checkbox" asp-for="@Model.IsActive" class="form-check-input" />
+        <label class="form-check-label" asp-for="@Model.IsActive">Is Active?</label>
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="ProductCategoryId">Product Category</label>
+        <select asp-for="ProductCategoryId" asp-items="ViewBag.ProductCategories" class="form-control">
+            <option value="">Select a category</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Edit Product</button>
+</form>

@@ -1,0 +1,31 @@
+@model IEnumerable<IdentityUser>
+
+<a class="btn btn-primary" asp-controller="Users" asp-action="AddUser">Add User</a>
+<hr>
+<table class="table navbar-toggleable-sm table-bordered">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var user in Model)
+        {
+            <tr>
+                <td>@user.Id</td>
+                <td>@user.UserName</td>
+                <td>
+                    @if(user.UserName != "Admin")
+                    {
+                        <form asp-controller="Users" asp-action="DeleteUser" method="post">
+                            <input type="hidden" value="@user.Id" name="id">
+                            <button onclick="return confirm('Are you sure you want to Delete this user?');" type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

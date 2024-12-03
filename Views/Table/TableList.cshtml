@@ -1,0 +1,32 @@
+@model IEnumerable<Table>
+
+<h1>Tables</h1>
+<form asp-controller="Table" asp-action="AddTable" method="post">
+    <button type="submit" class="btn btn-primary mb-3">Add Table</button>
+</form>
+
+@foreach(var table in Model)
+{
+    <div class="card mb-3 bg-light">
+        <div class="row g-0 d-flex align-items-center">
+            <div class="col-md-3">
+                <img style="height:150px;" src="~/qrcodes/@table.TableQrCode" class="img-fluid text-center" alt="No Image">
+            </div>
+            <div class="col-md-4">
+                <div class="card-body">
+                    <h1 class="card-title">Table @table.TableNum</h1>
+                </div>
+            </div>
+            
+            <div class="col-md-3">
+                <div class="card-body text-center">
+                    
+                    <form asp-action="DeleteTable" asp-controller="Table" asp-route-id="@table.TableId" method="post" class="d-flex">
+                        <button onclick="return confirm('Are you sure you want to remove this item?');" class="btn btn-danger btn-lg mb-3 d-block flex-grow-1">Delete</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+}

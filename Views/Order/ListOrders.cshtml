@@ -1,0 +1,126 @@
+@model IEnumerable<Order>
+
+<h1>ORDERS</h1>
+@foreach(var order in Model)
+{
+    if(@order.IsOrderComplete == false)
+    {
+        int priceSum = 0;
+        <div class="col-11 mb-4 card p-4">
+            <div class="d-flex justify-content-between">
+                <div>
+                <h3 class="d-inline">Order @order.OrderId </h3>
+                @if(order.IsOrderComplete)
+                {
+                    <h3 class="text-success d-inline">Is Served</h3>
+                }
+                else
+                {
+                    <h3 class="text-danger d-inline">Is Not Served</h3>
+                }
+                </div>
+                <h3 class="d-inline">TableNo: @order.Table.TableNum</h3>
+                <h4>@order.OrderDate.ToString("H:mm dd/MM/yyyy")</h4>
+            </div>
+            <table class="table table-hover text-center table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th></th>
+                        <th>Category Name</th>
+                        <th>Quantity</th>
+                        <th>Price(single)</th>
+                        <th>Price(total)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var product in order.OrderItems)
+                    {
+                        <tr>
+                            <td >
+                                <img style="width: 50px;" src="~/Img/@product.ProductImage">
+                            </td>
+                            <td>@product.ProductName</td>
+                            <td>@product.Quantity</td>
+                            <td>@product.ProductPrice TL</td>
+                            <td>@(product.ProductPrice * product.Quantity) TL</td>
+                        </tr>
+                        priceSum += (int)(product.ProductPrice * product.Quantity);
+                    }
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-between">
+                <form method="post">
+                    <button class="btn btn-primary" type="submit" asp-controller="Order" asp-action="CompleteOrder" asp-route-id="@order.OrderId">Complete Order</button>
+                </form>
+
+                <h5 class="text-end">Price in total: @priceSum TL</h5>
+
+            </div>
+            
+            
+
+        </div>
+    }
+    
+}
+
+@foreach(var order in Model)
+{
+    if(@order.IsOrderComplete)
+    {
+        int priceSum = 0;
+        <div class="col-11 mb-4 card p-4">
+            <div class="d-flex justify-content-between">
+                <div>
+                <h3 class="d-inline">Order @order.OrderId </h3>
+                @if(order.IsOrderComplete)
+                {
+                    <h3 class="text-success d-inline">Is Served</h3>
+                }
+                else
+                {
+                    <h3 class="text-danger d-inline">Is Not Served</h3>
+                }
+                </div>
+                <h4>@order.OrderDate.ToString("H:mm dd/MM/yyyy")</h4>
+            </div>
+            <table class="table table-hover text-center table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th></th>
+                        <th>Category Name</th>
+                        <th>Quantity</th>
+                        <th>Price(single)</th>
+                        <th>Price(total)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(var product in order.OrderItems)
+                    {
+                        <tr>
+                            <td >
+                                <img style="width: 50px;" src="~/Img/@product.ProductImage">
+                            </td>
+                            <td>@product.ProductName</td>
+                            <td>@product.Quantity</td>
+                            <td>@product.ProductPrice TL</td>
+                            <td>@(product.ProductPrice * product.Quantity) TL</td>
+                        </tr>
+                        priceSum += (int)(product.ProductPrice * product.Quantity);
+                    }
+                </tbody>
+            </table>
+            <div class="d-flex justify-content-between">
+                <form method="post">
+                    <button onclick="return confirm('Are you sure you want to Delete this item?')" class="btn btn-danger" type="submit" asp-controller="Order" asp-action="DeleteOrder" asp-route-id="@order.OrderId">Delete Order</button>
+                </form>
+
+                <h5 class="text-end">Price in total: @priceSum TL</h5>
+            </div>
+            
+            
+
+        </div>
+    }
+    
+}

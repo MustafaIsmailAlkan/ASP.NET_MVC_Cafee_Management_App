@@ -1,0 +1,91 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Cafee_Prototype
+build_property.RootNamespace = Cafee_Prototype
+build_property.ProjectDir = C:\Users\Alkan\OneDrive\Masaüstü\Programming Stuff\C# Projects\1-Dot Net Calisma Alanim\MODFIYE EDILECEK\Cafee_Prototype\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Alkan\OneDrive\Masaüstü\Programming Stuff\C# Projects\1-Dot Net Calisma Alanim\MODFIYE EDILECEK\Cafee_Prototype
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Category/AddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Category/EditCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcRWRpdENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Category/ListCategories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcTGlzdENhdGVnb3JpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Home/Main.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Order/ListOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcTGlzdE9yZGVycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Order/MakeOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcTWFrZU9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Order/OrderSuccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcT3JkZXJTdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Product/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGRQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Product/EditProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0UHJvZHVjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Product/ListProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxMaXN0UHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Table/AddTable.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcQWRkVGFibGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Table/TableList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGFibGVcVGFibGVMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Users/AddUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQWRkVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Users/ListUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTGlzdFVzZXJzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Alkan/OneDrive/Masaüstü/Programming Stuff/C\# Projects/1-Dot Net Calisma Alanim/MODFIYE EDILECEK/Cafee_Prototype/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-3kf85ox8cr

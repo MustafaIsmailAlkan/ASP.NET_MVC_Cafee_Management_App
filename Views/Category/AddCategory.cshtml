@@ -1,0 +1,9 @@
+@model ProductCategory
+
+<form asp-action="AddCategory" asp-controller="Category" method="post" class="mb-3">
+    <div class="form-group mb-3">
+        <label asp-for="@Model.CategoryName">Category Name</label>
+        <input type="text" asp-for="@Model.CategoryName" class="form-control"/>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Category</button>
+</form>
